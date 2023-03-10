@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <title>JAVASCRIPT</title>
+</head>
+    <body>
+        <header id="cabecera">
+            <h1>JAVASCRIPT</h1>
+        </header>
+
+        <section class="contenedor">
+            <!--<article id="datos" class="content">
+                <h4>DATOS</h4>
+                <div>
+                    <p>Lugar a visitar: </p>
+                    <select name="" id="">
+                        <option value="León"></option>
+                        <option value="Silao"></option>
+                        <option value="Guanajuato"></option>
+                    </select>
+                </div>
+                <div>
+                    <p>Número de personas: </p>
+                    <input type="number" name="" id="" value="0">
+                </div>
+                <div>
+                    <p>Número de habitaciones: </p>
+                    <input type="number" name="" id="" value="0">
+                </div>
+                <div>
+                    <p>Pasajes Requeridos: </p>
+                    <input type="number" name="" id="" value="0">
+                </div>
+                <div>
+                    <button id="btnEviar" onclick="Enviar()">Generar Conceptos</button>
+                </div>
+            </article>-->
+            <article id="conceptos" class="content">
+                <h4>DATOS IMPORTANTES</h4>
+                <div id="concepto">
+                    <div>
+                        <p>Nombre del responsable: </p>
+                        <input type="text" placeholder="Nombre Completo" name="" id="nombreRes">
+                    </div>
+                    <div>
+                        <p>Correo Eléctronico:</p>
+                        <input type="email" placeholder="alguien@correo.com" name="" id="correo">
+                    </div>
+                    <div>
+                        <p>Lugar a visitar</p>
+                        <select name="" id="lugar">
+                            <option value="Leon">León</option>
+                            <option value="Silao">Silao</option>
+                            <option value="Guanajuato">Guanajuato</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Número de habitaciones</p>
+                        <input type="number" placeholder="0" name="" id="habitaciones">
+                    </div>
+                    <div>
+                        <p>Pasajes Requeridos:</p>
+                        <input type="number" placeholder="0" name="" id="pasajes">
+                    </div>
+                    
+                </div>
+            </article>
+            
+            <article id="conceptos" class="content">
+                <h4>DATOS DEL CLIENTE</h4>
+                <div id="concepto">
+                    <div>
+                        <p>Número de adultos</p>
+                        <select name="adultos" onchange="GenerarEdades()" id="adultos">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div id="ninoContenedor">
+                       <!-- <p>Niño: </p>
+                        <div id="ninos">
+                            <p>Edad</p>
+                            <input type="number" placeholder="0" name="" id="">
+                        </div>-->
+                    </div>
+                </div>
+            </article>
+           <article id="facturacion" class="content">
+                <div class="datosFacturacion">
+                    <p>Creat Ticket: </p>
+                    <div>
+                        <button id="btnGenerar" onclick="Generar()">Generar Ticket</button>
+                    </div>
+                </div>
+                
+            </article>
+        </section>
+
+        <footer id="pie">
+
+        </footer>
+        <script src="java/codigo.js"></script>
+    </body>
+</html>
